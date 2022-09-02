@@ -1,0 +1,344 @@
+/* Background */
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+
+  background-image: linear-gradient(
+    to top right,
+    #262c56 50%,
+    #31386a,
+    #282e59
+  );
+  background-attachment: fixed;
+}
+
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+@font-face {
+  font-family: "nevis Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("nevis Bold"), url("../Fonts/nevis.woff") format("woff");
+}
+
+* {
+  font-family: "nevis Bold", "Roboto", "Arial";
+}
+
+/* Scrollbar */
+/* Firefox */
+html {
+  scrollbar-color: #9e07f7 #1e2240;
+  scrollbar-width: thin;
+}
+
+/* Chromium */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e2240;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #8a02f5, #e51aff);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #6f00c5, #b213c7);
+  cursor: pointer;
+}
+
+/* Div Styles */
+.bordered-div {
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #353768;
+
+  background-image: linear-gradient(to right bottom, #31386a, #252d56);
+  color: white;
+
+  transition: 0.25s;
+}
+
+.bordered-div-movable:hover {
+  transform: scale(0.85);
+  border-color: #353768;
+
+  transition: 0.25s;
+}
+
+.important-bordered-div {
+  background-image: linear-gradient(to right bottom, #8a02f5, #e51aff);
+  -webkit-box-shadow: -3px 8px 20px 1px #b107fc;
+  -moz-box-shadow: -3px 8px 20px 1px #b107fc;
+  box-shadow: -3px 8px 20px 1px #b107fc;
+
+  border-width: 0px;
+  border-style: none;
+}
+
+.bordered-div-purple {
+  background: #1e2240;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+
+  color: white;
+  border-radius: 10px;
+}
+
+.bordered-div-orange {
+  background-image: linear-gradient(to right, #fa729d, #ff984f);
+  color: white;
+}
+
+.app-title {
+  background-image: linear-gradient(to right, #fa729d, #ff984f);
+  -webkit-box-shadow: -3px 8px 20px -6px #f47e77;
+  -moz-box-shadow: -3px 8px 20px -6px #f47e77;
+  box-shadow: -3px 8px 20px -6px #f47e77;
+
+  color: white;
+  border-radius: 10px;
+  font-size: 27px;
+
+  text-align: center;
+
+  padding-top: 30px;
+  padding-bottom: 35px;
+  height: 25px;
+  width: 170px;
+}
+
+/* Buttons */
+.primary-btn {
+  display: flex;
+  align-items: center;
+
+  background-image: linear-gradient(to right, #00d0ff, #0074ff);
+  color: white;
+
+  outline: none;
+  border: none;
+
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 15px;
+
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.primary-btn:focus,
+.primary-btn:hover {
+  transform: scale(0.9);
+}
+
+.primary-btn p {
+  margin: 0px;
+  margin-right: 20px;
+}
+
+/* Text Styles */
+purple-text {
+  background-image: linear-gradient(to right, #8a02f5, #e51aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Icon Button */
+.ico-btn {
+  transition: 0.25s;
+}
+
+.ico-btn:hover {
+  transform: scale(0.85);
+}
+
+/* Footer */
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  background: #1e2240;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.footer img.logo {
+  font-size: 25px;
+  font-weight: bold;
+
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-text {
+  padding-left: 20px;
+}
+
+.footer-text h1 {
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.owner-statement {
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+.credits {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0px;
+
+  color: white;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.credits:hover {
+  background-image: linear-gradient(to right, #8a02f5, #e51aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+}
+
+.copyright p {
+  padding-right: 30px;
+  margin-top: 0px;
+}
+
+.footer .social-media-logos img {
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.social-media-logos img {
+  transition: 0.5s;
+}
+
+/* Header */
+.header {
+  -moz-box-shadow: 6px 6px 6px -6px black;
+  -webkit-box-shadow: 6px 6px 6px -6px black;
+  box-shadow: 6px 6px 6px -6px black;
+  color: white;
+
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+
+  position: fixed;
+  width: 100%;
+
+  border-radius: 0px !important;
+  z-index: 1;
+}
+
+.menubar-holder,
+.profile-holder {
+  float: left;
+  margin: 0px;
+  width: 20%;
+
+  display: flex;
+  align-items: center;
+}
+
+.menubar-holder {
+  width: 80%;
+}
+
+.menubar-holder i {
+  font-size: 25px;
+  margin-top: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  cursor: pointer;
+}
+
+.menubar-holder .softwaress-logo-holder {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  color: white;
+
+  margin-left: 10px;
+}
+
+.menubar-holder .softwaress-logo-holder p {
+  font-weight: 900;
+  font-size: 18px;
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.menubar-holder .header-link {
+  text-decoration: none;
+  color: white;
+
+  margin-left: 20px;
+  transition: 0.25s;
+}
+
+.menubar-holder .header-link:hover {
+  background-image: linear-gradient(to right, #8a02f5, #e51aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.profile-holder {
+  justify-content: flex-end;
+}
+
+.profile-holder img {
+  border-radius: 100px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 630px) {
+  .footer {
+    padding-bottom: 15px;
+  }
+  .footer .logo {
+    width: 20% !important;
+    height: fit-content;
+  }
+  .copyright {
+    flex-direction: column;
+  }
+
+  .softwaress-logo-holder p {
+    display: none;
+  }
+  .menubar-holder .header-link {
+    margin-left: 15px;
+  }
+}
