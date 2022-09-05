@@ -27,13 +27,13 @@ a {
   cursor: pointer;
 }
 
-::-moz-selection {
+/* ::-moz-selection {
   background: #03acb7;
 }
 
 ::selection {
   background: #03acb7;
-}
+} */
 
 /* Games Slideshow */
 .games-header {
@@ -219,4 +219,54 @@ a {
   /* background: linear-gradient(145deg, #039ba5, #03b8c4); */
   box-shadow: 3px 3px 7px #03a2ac, -3px -3px 7px #03b6c2;
   transition: 0.5s;
+}
+
+.softwaress-slogan-div {
+  padding-top: calc(80px + 50px);
+  padding-bottom: 50px;
+}
+
+.softwaress-slogan-container {
+  display: flex;
+  justify-content: center;
+}
+
+.softwaress-slogan-container img {
+  width: 10%;
+}
+
+.softwaress-slogan-container .right .title {
+  font-size: 3vw;
+  font-weight: 900;
+  margin-left: 10px;
+}
+
+.softwaress-slogan-container .right .slogan {
+  font-size: 1.5vw;
+  font-weight: 400;
+  margin-top: 2.5px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 630px) {
+  .softwaress-slogan-div {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .softwaress-slogan-container img {
+    width: 30%;
+  }
+
+  .softwaress-slogan-container .right {
+    width: min-content;
+  }
+
+  .softwaress-slogan-container .right .title {
+    font-size: 9vw;
+  }
+
+  .softwaress-slogan-container .right .slogan {
+    font-size: 4.5vw;
+  }
 }

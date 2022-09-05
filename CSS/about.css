@@ -1,0 +1,56 @@
+/* Body sizing and color */
+html,
+body {
+  /* background-color: #151b1b; */
+  margin: 0;
+  height: 100%;
+  width: 100%;
+
+  font-family: "nevis Bold";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Text stuff */
+.text,
+p,
+h2,
+h3 {
+  /* color: #03acb7; */
+  margin: 0;
+  color: white;
+}
+
+a {
+  cursor: pointer;
+}
+
+.games-header {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 50px;
+}
+
+.description-holder {
+  font-size: 20px;
+  font-weight: 300;
+
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.description-holder h4 {
+  color: white;
+  margin-bottom: 7.5px;
+}
+
+@media screen and (max-width: 630px) {
+  .description-holder {
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: center;
+  }
+}
